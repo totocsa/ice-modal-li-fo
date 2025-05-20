@@ -1,5 +1,5 @@
 <script setup>
-import { useModalLiFoStore } from "@/Components/totocsa/ModalLiFo/ModalLiFoStore.js"
+import { useModalLiFoStore } from "@IceModalLiFo/Components/totocsa/ModalLiFo/ModalLiFoStore.js"
 
 const props = defineProps({
     closeHandler: Function,
