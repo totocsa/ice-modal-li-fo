@@ -1,6 +1,6 @@
 <script setup>
 import { useModalLiFoStore } from "./ModalLiFoStore.js"
-import { useTranslationStore } from "@/Components/totocsa/LocalTranslation/translationStore"
+import { useTranslationStore } from "@IceDatabaseTranslationLocally/Components/totocsa/LocalTranslation/translationStore"
 import { LanguageIcon } from '@heroicons/vue/20/solid'
 </script>
 
