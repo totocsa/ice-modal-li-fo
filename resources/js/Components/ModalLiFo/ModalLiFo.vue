@@ -14,11 +14,15 @@ const getInitialFocus = (itemId) => {
 }
 
 const handleClick = (event) => {
-    store.removeLast()
+    if (store.stack.at(-1).props.closeOnOutClick ?? true) {
+        store.removeLast()
+    }
 }
 
 const handleKeydown = (event) => {
-    if (event.key === "Escape" && store.stack.length > 0) {
+    if (store.stack.length > 0 &&
+        (store.stack.at(-1).props.closeOnEscape ?? true) &&
+        event.key === "Escape") {
         store.removeLast()
     }
 }
