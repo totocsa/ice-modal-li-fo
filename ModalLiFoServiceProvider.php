@@ -14,9 +14,7 @@ class ModalLiFoServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        // Publikálható migrációk
-        $this->publishes([
-            __DIR__ . '/resources' => resource_path(),
-        ], 'ice-modal-li-fo');
+        $groupsBase = 'ice-modal-li-fo';
+        $this->publishes([__DIR__ . '/resources/js' =>  resource_path("js/totocsa/$groupsBase")], "$groupsBase-resources");
     }
 }
